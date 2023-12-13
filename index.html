@@ -1,62 +1,141 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vincent Wong Portfolio</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>COGS3 - Best of 10!</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Josefin+Sans&family=Lobster&family=Roboto:wght@100;300;400;500;900&display=swap" rel="stylesheet">
-</head>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-<body>
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <div class="container">
-    <!-- Reports the values of the die and the sum -->
-    <h1>Let's Roll the Dice!</h1>
+    <!-- My CSS-->
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Reports the outcome of the bet -->
-    <h2>
-      If the dice add to anything above 9, you win $5! <br>
-      If the dice add to 5 or less, I win $5. <br>
-      Ready to play?
-    </h2>
+  </head>
+  <body>
+    <section id="title">
+      <div class="row container-fluid">
+      <!-- Title -->
+      <div class="col-lg-6">
+        <h1 class="title">Vincent Wong</h1>
+        <dl>
+          <dt>Occupation</dt>
+          <dd><a href="https://tritontransit.ucsd.edu" class="link">Transportation</a></dd>
+        </dl>
+        
+        <dl>
+          <dt>Education</dt>
+          <dd><a href="https://ucsd.edu/" class="link">UCSD</a></dd>
+          <dd>2022-2026</dd>
+          <dd><a href="https://www.glendale.edu/" class="link">Glendale Community College</a></dd>
+          <dd>Summer 2023</dd>
+        </dl>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-image" src="images/College-student-male-with-green-shirt-and-laptop-AdobeStock_440866239_no-bg2.png" alt="Male college student">
+      </div>
+      </div>
+    </section>
 
-    <!-- JS will input the content -->
-    <h3></h3>
+    <section id="about">
+      <div class="row container-fluid">
+        <!--About Me-->
+        <div class="col-lg-6">
+          <h1 class="bold">About Me</h1>
+        </div>
+        <div class="col-lg-6 pop">
+          <h3>Vincent Wong is a dedicated worker who goes above and beyond what is normal to accomplish tasks.</h3>
+          <a type="button" class="btn btn-warning" href="resume.html">Resume</a>
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <p> Do you want to roll the dice? </p>
-      <!-- Form to input amount of times to play-->
-      <p>Please input the amount of times to roll the dice. (Ex. 1)</p>
-      <input type="number" id="AmountToRoll" value="1">
-      <button class="myBtn" onclick="letsPlay()">Let's Play!</button>
-    </div>
+    <section id="projects">
+      <div class="row container-fluid">
+        <!--My Projects-->
+        <div class="col-lg-6">
+          <h1 class="bold">My Projects</h1>
+        </div>
+        <div class="col-lg-6 pop">
+          <h3>Some of the projects that I have been a part of included building a speaker from scratch and coding and building a robot</h3>
+        </div>
+      </div>
+      <div class="row container-fluid">
+        <div class="col-lg-6">
+          <h3 class="pop">A working speaker that I assembled from the ground up.</h3>
+        </div>
+        <div class="col-lg-6">
+          <img class="image" src="images/20221026_164755.png" alt="Picture of a speaker with circuitry.">
+        </div>
+      </div>
+      <div class="row container-fluid">
+        <div class="col-lg-6">
+          <img class="image" src="images/20221118_151656.png" alt="Photo of robot wiring and circuitry">
+        </div>
+        <div class="col-lg-6">
+          <video width="640" height="360" controls>
+            <source src="images/20221129_165229.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+        <div class="row container-fluid">
+          <div class="col-lg-6">
+            <h3 class="pop">A robot that was built to follow a black line</h3>
+          </div>
+          <div class="col-lg-6"></div>
+      </div>
+    </section>
 
-    <div class="timesplayed">
-      <p></p>
-    </div>
+    <section id="hobbies">
+      <div class="row container-fluid">
+        <!-- My hobbies-->
+        <div class="col-lg-6">
+          <h1 class="bold">My Hobbies</h1>
+        </div>
+        <div class="col-lg-6 pop">
+          <h3>My hobbies include experimenting with photography. Different variables of photography result in different expressions in photography.</h3>
+        </div>
+      </div>
+      <div class="row container-fluid">
+        <div class="col-lg-6"><img class="image" src="images/20221031_181252.png" alt="Sunset1"></div>
+        <div class="col-lg-6"><img class="image" src="images/20221111_173231.jpg" alt="Long exposure of traffic at night"></div>
+      </div>
+      <div class="row container-fluid">
+        <div class="col-lg-6"><img class="image" src="images/20230407_062513.png" alt="Sunset2"></div>
+        <div class="col-lg-6"><img class="image" src="images/20231027_235237.jpg" alt="Framing and composition of SeaWorld park sign with entrance gate"></div>
+      </div>
+    </section>
 
-    <div class="dice">
-      <img class="img1" src="images/dice6.png">
-    </div>
-
-    <div class="dice">
-      <img class="img2" src="images/dice6.png">
-    </div>
-
-    <div class="balance">
-      <p></p>
-    </div>
-  </div>
-  
-  <footer>
-    COGS3 - Dice Game Bet 10 - Vincent Wong - 2023-11-25
-  </footer>
-
-  <script src="index.js" charset="utf-8"></script>
-
-</body>
-
+    <section id="connect">
+      <div class="row container-fluid">
+        <!-- Contact Me-->
+        <div class="col-lg-6">
+          <h1>Contact Me!</h1>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="pop">Do you wish to contact me? You can find me on social media here!</h3>
+          <a type="button" class="btn btn-warning" href="https://www.twitter.com">X</a>
+          <a type="button" class="btn btn-warning" href="https://www.facebook.com">Facebook</a>
+          <a type="button" class="btn btn-warning" href="https://www.instagram.com">Instagram</a>
+          <a type="button" class="btn btn-warning" href="https://plus.google.com">Google Plus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Vincent Wong</p>
+      <p>Last Updated Dec. 2023</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>

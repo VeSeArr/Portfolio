@@ -1,0 +1,71 @@
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #00354E;
+  color: #ffffff;
+}
+
+.pop {
+  color: #FFDD00;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.link {
+  color: aliceblue;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FFDD00;
+  text-decoration-color: #FFDD00;
+}
+
+.title {
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: -4px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.resume {
+  text-align: center;
+  object-position: center;
+}
+
+.title-image {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+dt {
+  width: 33%;
+  color: #FFDD00;
+}
+dd {
+  margin-left: auto;
+  width: 66%;
+}
+
+.image {
+  width: 100%;
+}
+
+#footer {
+  padding: 1% 15%;
+  text-align: center;
+}
